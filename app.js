@@ -16,9 +16,9 @@ if (!_.isUndefined(process.env.WS_SECRET) && !_.isNull(process.env.WS_SECRET)) {
 }
 else {
 	try {
-		var tmp_secret_json = require('./ws_secret.json');
-		WS_SECRET = _.values(tmp_secret_json);
-		//WS_SECRET = 'test';
+		//var tmp_secret_json = require('./ws_secret.json');
+		//WS_SECRET = _.values(tmp_secret_json);
+		WS_SECRET = 'test';
 	}
 	catch (e) {
 		console.error("WS_SECRET NOT SET!!!");
@@ -44,13 +44,10 @@ app.get('/', function(req, res) {
 });
 
 
-app.get('/difficulty', function (req, res) {
-	res.send(Nodes._blockchain.getDifficulty());
+app.get('/akroma', function (req, res) {
+	res.send(Nodes._blockchain.getStats());
 });
 
-app.get('/hashrate', function (req, res) {
-	res.send(Nodes._blockchain.getAvgHashrate());
-});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
