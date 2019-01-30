@@ -8,7 +8,7 @@ var netStatsApp = angular.module('netStatsApp', ['netStatsApp.filters', 'netStat
 /* Services */
 
 netStatsApp.factory('socket', function ($rootScope) {
-	var socket = new Primus();
+	var socket = new Primus('https://stats.akroma.wattpool.net');
 	return socket;
 });
 

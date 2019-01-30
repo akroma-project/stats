@@ -23,7 +23,7 @@ var vendor = [
 	'dist/js/lib/moment.en.min.js',
 	'dist/js/lib/toastr.min.js',
 	'dist/js/lib/jquery.sparkline.min.js',
-	'dist/js/lib/primus.min.js'
+	//'dist/js/lib/primus.min.js'
 ];
 
 var styles = [
@@ -55,7 +55,7 @@ var vendor_lite = [
 	'dist-lite/js/lib/moment.en.min.js',
 	'dist-lite/js/lib/toastr.min.js',
 	'dist-lite/js/lib/jquery.sparkline.min.js',
-	'dist-lite/js/lib/primus.min.js'
+	// 'dist-lite/js/lib/primus.min.js'
 ];
 
 var styles_lite = [
