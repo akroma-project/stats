@@ -119,6 +119,13 @@ module.exports = function(grunt) {
 					},
 					{
 						expand: true,
+						cwd: 'src/deploy/',
+						src: ['*'],
+						dest: 'dist/',
+						filter: 'isFile'
+					},
+					{
+						expand: true,
 						cwd: 'src/css/',
 						src: styles,
 						dest: 'dist/css/',
