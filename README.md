@@ -31,11 +31,6 @@ To build the full version run
 grunt
 ```
 
-To build the lite version run
-```bash
-grunt lite
-```
-
 If you want to build both versions run
 ```bash
 grunt all
